@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ledger.com</title>
+    <script src="https://kit.fontawesome.com/4048592ab8.js" crossorigin="anonymous"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0;
+            padding-left: 2rem;
+            padding-right: 9rem;
+            background-color: rgb(42, 42, 133);
+
+        }
+
+        header ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+            font-size: 1.25rem;
+        }
+
+        header img {
+            width: 35px;
+        }
+
+        .imgtext img {
+            width: 80px;
+        }
+
+        .about li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .about li img {
+            width: 32px;
+        }
+
+        li i {
+            color: orange;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2f3640;
+            font-size: 1.4rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: orange;
+            cursor: pointer;
+        }
+
+        form button a:hover {
+            color: rgb(22, 22, 128);
+            cursor: pointer;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .the-body {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 8rem;
+            padding-right: 11rem;
+            padding-top: 6rem;
+            padding-bottom: 3rem;
+        }
+
+        .info {
+            margin-top: 4rem;
+            padding-left: 8rem;
+        }
+
+        .backg {
+            background: url("images/book1.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center top bottom;
+            animation-name: change;
+            animation-duration: 13s;
+            animation-iteration-count: infinite;
+        }
+
+        @keyframes change {
+            0% {
+                background-image: url("images/book1.jpg");
+            }
+
+            33% {
+                background-image: url("images/book2.jpg");
+            }
+
+            66% {
+                background-image: url("images/wallpaperflare.com_wallpaper.jpg");
+            }
+
+            100% {
+                background-image: url("images/book1.jpg");
+            }
+        }
+
+        form {
+            margin-top: 2rem;
+            display: flex;
+            align-items: center;
+        }
+
+        form button {
+            height: 60px;
+            width: 220px;
+            border: none;
+            color: white;
+            background-color: tomato;
+            font-size: 1.1rem;
+        }
+
+        .searching input {
+            width: 500px;
+            height: 50px;
+            font-size: 1.1rem;
+            padding-left: 13px;
+            border: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        form {
+            background-color: white;
+        }
+
+        form .fa-search {
+            align-items: center;
+            padding-left: 14px;
+        }
+
+        h1 {
+            margin-top: 4rem;
+            margin-left: 4rem;
+            font-size: 2.3rem;
+            font-weight: 700;
+            color: white;
+        }
+
+        h2 {
+            font-size: 1.7rem;
+            color: white;
+        }
+
+        p {
+            color: white;
+            font-size: 1.2rem;
+        }
+
+        .info {
+            padding-right: 7rem;
+        }
+
+        .boxes {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            padding-left: 5rem;
+            padding-right: 5rem;
+            margin-top: 9rem;
+            gap: 5rem;
+            padding-bottom: 6rem;
+        }
+
+        .box {
+            border: .3px solid rgb(214, 211, 211);
+            height: 335px;
+            padding: 1.35rem;
+            border-radius: 7px;
+            background-color: rgb(222, 220, 220);
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+
+        .box h3 {
+            font-size: 1.17rem;
+            font-weight: 500;
+        }
+
+        .box p {
+            color: rgb(37, 36, 36);
+        }
+
+        .box:hover {
+            background-color: white;
+            border: none;
+            transition: .6s ease-out;
+        }
+
+        hr {
+            color: black;
+            height: 1px;
+            border-radius: none;
+        }
+
+        .box img {
+            width: 35px;
+        }
+
+        .dot a {
+            display: none;
+        }
+
+        @media screen and (max-width:800px) {
+            .about ul {
+                display: none;
+            }
+
+            header {
+                padding-top: .8rem;
+                padding-bottom: .8rem;
+
+            }
+
+            .dot a {
+                display: inline-block;
+            }
+
+            .btn-mobile img {
+                width: 27px;
+                height: 27px;
+            }
+
+            .ser {
+                display: none;
+            }
+
+            .the-body {
+                display: block;
+                padding-left: 1rem;
+                padding-right: 1rem;
+                margin-right: 1rem;
+            }
+
+            .info {
+                padding-right: 1rem;
+            }
+
+            h1 {
+                font-size: 2rem;
+            }
+
+            h2 {
+                font-size: 1.4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .boxes {
+                display: block;
+                gap: 1rem;
+            }
+
+            .box {
+                margin-top: 2rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                <img src="images/book-stack.png" alt="">
+            </div>
+            <div class="imgtext">
+                <img src="images/bhaiplzfinal.png" alt="">
+            </div>
+        </div>
+
+        <div class="about">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#"> Home</a>
+                </li>
+                <li>
+                    <img src="images/Orange_Phone_Font-Awesome.svg.png" alt="">
+                    <a href="/contact.html">Contact Us</a>
+                </li>
+                <li>
+                    <img src="images/profile+icon-1320196239936269496.png" alt="">
+                    <a href="#"> About Us</a>
+                </li>
+            </ul>
+
+            <div class="dot">
+                <a href="" class="btn-mobile"><img src="images/menu-dots.svg" alt="Menu dots"></a>
+            </div>
+        </div>
+
+        
+    </header>
+
+    <div class="backg">
+        <div class="the-body">
+            <div class="info">
+                <h2>
+                    Hi Readers,
+                </h2>
+                <p>
+                    Reading intended to create a particular mood or feeling and increases the Knowledge
+                </p>
+            </div>
+
+            <div class="searching">
+                <h1>
+                    What's your Mood !
+                </h1>
+                <form>
+                    <i class="fas fa-search"></i>
+                    <input type="search" id="search-bar" placeholder="Search your reading Mood here">
+                    <button ><a href="options.html">search</a></button>
+                </form>
+            </div>
+        </div>
+
+        <div class="facts">
+            <div class="boxes">
+                <div class="box">
+                    <img src="images/icon-thinking-10.jpg" alt="">
+                    <h3>Do you know?</h3>
+                    <hr>
+                    <p>The reason why old books have such a distinct smell is because hundreds of organic compounds in
+                        the pages break down over time and release chemicals that smell like almond, vanilla, and grass.
+                    </p>
+                </div>
+
+                <div class="box">
+                    <img src="images/thinking.svg" alt="">
+                    <h3>The fact !</h3>
+                    <hr>
+                    <p>
+                        All it takes is 20 minutes a day. If you read for this long every day for a year, then you would
+                        have read 1.8 million words. You will be like a human dictionary!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let MoodBook = document.getElementById('search-bar');
+        let SpecificBook = document.getElementById('search-inp');
+        
+        MoodBook.addEventListener("input",function(e){
+            
+             
+    
+                let MoodBookname = this.value;
+                localStorage.setItem('MoodBookName',MoodBookname);
+
+            
+            
+        })
+        MoodBook.value = ""
+        SpecificBook.addEventListener("input",function(e){
+           
+            let SpecificBookname = this.value;
+            localStorage.setItem('SpecifiBookName',SpecificBookname);
+            
+        })
+        
+        
+        
+
+
+    </script>
+</body>
+
+</html>

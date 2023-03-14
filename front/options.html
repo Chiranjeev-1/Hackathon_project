@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recommend</title>
+    <script src="https://kit.fontawesome.com/4048592ab8.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        body{
+            background-image: url("images/moon.png");
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            overflow-x: hidden;
+        }
+        * {
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 0;
+            padding-left: 2rem;
+            padding-right: 9rem;
+            background-color: rgb(42, 42, 133);
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+
+        header ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 5rem;
+            font-size: 1.25rem;
+        }
+
+        header img {
+            width: 35px;
+        }
+
+        .about li {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .about li img {
+            width: 25px;
+        }
+
+        .about li i {
+            color: orange;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2f3640;
+            font-size: 1.1rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        a:hover {
+            color: orange;
+        }
+
+        .logo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .ser {
+            background: #2f3640;
+            border-radius: 40px;
+            padding: 10px;
+        }
+
+        .ser:hover>.search-inp {
+            width: 170px;
+            padding: 0 6px;
+        }
+
+        .ser:hover>.search-btn {
+            background: white;
+        }
+
+        .search-btn {
+            color: orange;
+            text-decoration: none;
+            float: right;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            background: #2f3640;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .search-inp {
+            border: none;
+            background: none;
+            outline: none;
+            float: left;
+            padding: 0;
+            color: white;
+            font-size: 16px;
+            transition: .4s;
+            line-height: 25px;
+            width: 0px;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        .dot {
+            display: none;
+        }
+
+        #Book_detail{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            
+            padding-left: 3rem;
+            padding-right: 2rem;
+            gap: 2rem;
+            margin-top: 3rem;
+            grid-auto-rows: 1fr;
+            justify-content: center;
+            
+            align-items: center;
+            justify-content: center;
+            grid-template-columns: repeat(auto-fill,400px);
+            color: white;
+            align-items: stretch;
+            
+            
+        }
+        
+
+        .author {
+            padding: 1.1rem;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 1.1rem;
+            margin-top: 1.1rem;
+            border-radius: 15px; 
+            border-color: black;
+            border: solid;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+        }
+         
+        .author h1 {
+            margin: 0;
+        }
+        .Author{
+            padding-top: 8px;
+            padding-bottom: 3px;
+        }
+        .imgtext{
+            width: 30px;
+            height: 100%;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <div>
+                
+            </div>
+            <div class="imgtext">
+                <img src="images/bhaifinal.png" style="width: 90px; height: 50px;" alt="">
+            </div>
+        </div>
+        <div style="flex: 1;min-width: 100px;"></div>
+
+        <div class="about">
+            <ul>
+                <li>
+                    <i class="fa-solid fa-house"></i>
+                    <a href="index.html"> Home</a>
+                </li>
+                <li>
+                    <img src="images/Orange_Phone_Font-Awesome.svg.png" alt="">
+                    <a href="contact.html">Contact Us</a>
+                </li>
+                <li style="padding-right: 20px;">
+                    <img src="images/profile+icon-1320196239936269496.png" alt="">
+                    <a href="#"> About Us</a>
+                </li>
+            </ul>
+
+            <div class="dot">
+                <a href="" class="btn-mobile"><img src="images/menu-dots.svg" alt="Menu dots"></a>
+            </div>
+        </div>
+
+        
+        </div>
+    </header>
+    <div>
+
+    <div id="Book_detail">
+    
+    </div>
+    
+
+    <script src="API.js">
+       
+
+       
+        
+    </script>
+</body>
+
+</html>

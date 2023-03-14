@@ -1,0 +1,26 @@
+#Book_detail, .authors{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    font-family: rawkbrush;
+    color: black;
+    flex-wrap:wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    
+    font-size: 25px;
+    
+    
+    width: fit-content;
+    height: fit-content;
+    padding-bottom: 10px;
+
+}
+#section{
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+
+}
+
+

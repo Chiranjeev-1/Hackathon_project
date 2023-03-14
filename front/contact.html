@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact here</title>
+    <!-- This CSS and font is purely for presentational purposes. -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
+        rel="stylesheet" />
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'poppins', sans-serif;
+            text-align: center;
+            justify-content: center;
+            margin: 0;
+        }
+        
+        .head {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 6rem;
+        }
+
+        .first {
+            padding-left: 1rem;
+        }
+
+        .cred {
+            padding-left: 15rem;
+        }
+
+        .cred {
+            padding-right: 14rem;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+            gap: 50px;
+            font-size: 1.1rem;
+            font-weight: 200;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 30px;
+        }
+
+        .login {
+            width: 70px;
+            height: 40px;
+            background-color: rgba(128, 0, 128, 0);
+            font-size: 1.1rem;
+            font-weight: 200;
+            color: white;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        .signin {
+            width: 80px;
+            height: 40px;
+            background-color: rgba(128, 0, 128, 0);
+            font-size: 1.1rem;
+            font-weight: 200;
+            color: white;
+            border: 2px solid white;
+            cursor: pointer;
+            margin-top: 1rem;
+            margin-right: 3rem;
+        }
+
+        .enev {
+            padding-top: 3rem;
+        }
+
+        .image {
+            width: 100%;
+            height: 110vh;
+            background-image: url("images/headset.jpg");
+            background-color: rgba(128, 0, 128, 0.5);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .image-overlay {
+            width: 100%;
+            height: 110vh;
+            background-color: rgba(128, 0, 128, .85);
+        }
+
+        h1 {
+            font-weight: 500;
+            line-height: 1px;
+            font-size: 3.5rem;
+            color: white;
+        }
+
+        p {
+            color: white;
+            padding-bottom: 6rem;
+        }
+
+        form input,
+        form textarea {
+            font-family: 'poppins', sans-serif;
+            display: block;
+            font-size: 1rem;
+            padding-left: .5rem;
+            font-weight: 300;
+            color: white;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            margin-left: 31.9rem;
+        }
+
+        form input {
+            letter-spacing: 1px;
+            width: 470px;
+            height: 50px;
+            background-color: rgba(242, 241, 241, 0);
+            border: none;
+            border-bottom: 2px solid white;
+            outline: none;
+            margin-bottom: .6rem;
+        }
+
+        form textarea {
+            font-family: 'poppins', sans-serif;
+            font-size: 1rem;
+            font-weight: 400;
+            color: white;
+            width: 470px;
+            padding-left: .5rem;
+            padding-top: 1.5rem;
+            padding-right: 1rem;
+            height: 55px;
+            text-shadow: none;
+            background-color: rgba(242, 241, 241, 0);
+            border: none;
+            border-bottom: 2px solid white;
+            outline: none;
+            resize: none;
+            margin-top: 2.5rem;
+            margin-bottom: 4rem;
+        }
+
+        ::placeholder {
+            color: white;
+            opacity: .65;
+        }
+
+        .formbut {
+            width: 220px;
+            height: 55px;
+            border: none;
+            border-radius: 7px;
+            font-family: 'poppins';
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            background-color: rgb(62, 62, 214);
+        }
+
+        .formbut:hover {
+            background-color: rgb(100, 131, 225);
+        }
+
+        .foot {
+            margin-top: 5rem;
+            margin-left: .5rem;
+            color: rgb(99, 99, 99);
+            font-size: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+    <section class="learn">
+        <!-- Practice area start -->
+        <div class="image">
+            <div class="image-overlay">
+                <header>
+                    <div class="head">
+                        <div class="first">
+                            <ul>
+                                <li><a href="#">Business</a></li>
+                                <li><a href="#">Jobs</a></li>
+                                <li><a href="#">Counselling</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="buttons">
+                            <button class="login">Log in</button>
+                            <button class="signin">Sign in</button>
+                        </div>
+                    </div>
+                </header>
+
+                <div class="enev">
+                    <img src="images/envelope.svg" alt="Envelope image">
+                    <h1>Contact Us</h1>
+                    <p>If you have any query related bookings, you can contact us here. Please enter valid Details here.
+                    </p>
+                </div>
+
+                <div class="cred">
+                    <form action="" method="get">
+                        <label for="name">
+                            <input type="text" name="name" id="name" placeholder="YOUR FULL NAME" autofocus>
+                        </label>
+
+                        <label for="email">
+                            <input type="email" name="email" id="email" placeholder="Enter your Email">
+                        </label>
+
+                        <label for="message">
+                            <textarea name="message" id="message" cols="30" rows="10"
+                                placeholder="Enter your message here"></textarea>
+                        </label>
+
+                        <button class="formbut">SEND MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Practice area end -->
+    </section>
+
+
+</body>
+
+</html>
